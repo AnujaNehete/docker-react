@@ -1,0 +1,10 @@
+sudo: required
+services:
+    - docker
+
+    
+before_install:
+    - docker build -t anujap/docker-react -f Dockerfile.dev .
+
+script:
+    - docker run anujap/docker-react npm run test -- --coverage
