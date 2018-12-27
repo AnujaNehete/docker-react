@@ -8,3 +8,8 @@ before_install:
 
 script:
     - docker run anujap/docker-react npm run test -- --coverage
+    
+#deploy: 
+#    provider: elasticbeanstalk
+    
+    
